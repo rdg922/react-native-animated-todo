@@ -27,6 +27,9 @@ const Sidebar = (props: DrawerContentComponentProps) => {
   const handlePressMenuAbout = useCallback(() => {
     navigation.navigate('About')
   }, [navigation])
+  const handlePressMenuSettings = useCallback(() => {
+    navigation.navigate('Settings')
+  }, [navigation])
 
   return (
     <AnimatedColorBox
@@ -59,7 +62,7 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           borderWidth={3}
         />
         <Heading mb={4} size="xl">
-          Takuya Matsuyama
+            Rohit Dasgupta
         </Heading>
         <MenuButton
           active={currentRoute === 'Main'}
@@ -74,6 +77,13 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           icon="info"
         >
           About
+        </MenuButton>
+        <MenuButton
+          active={currentRoute === 'Settings'}
+          onPress={handlePressMenuSettings}
+          icon="gear"
+        >
+          Settings
         </MenuButton>
       </VStack>
       <Center>

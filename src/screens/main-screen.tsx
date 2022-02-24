@@ -66,7 +66,7 @@ export default function MainScreen() {
       w="full"
     >
       <Masthead
-        title="What's up, Takuya!"
+        title={'Hello Rohit!'}
         image={require('../assets/masthead.png')}
       >
         <NavBar />
