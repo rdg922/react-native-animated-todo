@@ -81,7 +81,7 @@ const Sidebar = (props: DrawerContentComponentProps) => {
         <MenuButton
           active={currentRoute === 'Settings'}
           onPress={handlePressMenuSettings}
-          icon="gear"
+          icon=""
         >
           Settings
         </MenuButton>
